@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="robot.jpeg" rel="stylesheet">
-   
+    <title>Virtual Assistant - Alexa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background with gradient and clean design */
+        body {
+            background: linear-gradient(135deg, #1c1c1c, #2b2b2b);
+            
+            color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0d6efd;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+
+        input[type="search"] {
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        .btn-custom {
+            width: 180px;
+            height: 50px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            color: #fff;
+            border: none;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary-custom {
+            background-color: #007bff;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary-custom {
+            background-color: #6c757d;
+        }
+
+        .btn-secondary-custom:hover {
+            background-color: #5a6268;
+        }
+
+        .response-text {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #20c997;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="robot.jpeg" alt="robot" id="ig">
-    <h2>
-        Hi I am Alexa ,the Virtual Assistant created by Vaishnavi 
-    </h2>
-    <button > <span id='cnt'>ask your questions here </span></button>
-<script src="first.js"></script>
+    <div class="container">
+        <h1>Alexa - Virtual Assistant</h1>
+        <h2>Hello, I'm here to help you. Ask me anything!</h2>
+        <div class="input-group mb-3">
+            <input type="search" id="ipt" class="form-control" placeholder="Type your question here...">
+        </div>
+        <button id="askBtn" class="btn btn-primary-custom btn-custom">Speak</button>
+        <button id="clearBtn" class="btn btn-secondary-custom btn-custom">Clear Response</button>
+        <div id="response" class="response-text"></div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="first.js"></script>
 </body>
+
 </html>
